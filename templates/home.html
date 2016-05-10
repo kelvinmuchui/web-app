@@ -4,7 +4,8 @@
     <title>Who Am I - Home</title>
 </head>
 <body>
-    <h1>Hello Number {{ session.user_id }}</h1>
+    <img src="{{ profile.pic_url }} "/>
+    <h1>Hello {{ profile.first_name }}</h1>
     <h3>Your Window:</h3>
     <table border="1">
         <tr>
@@ -38,7 +39,6 @@
     <ul>
         <li><a href="{{ url_for('self_test') }}">Self test</a></li>
         <li><a href="{{ url_for('friend_test') }}">Friend test</a></li>
-        <li><a href="{{ url_for('logout') }}">Log out</a></li>
     </ul>
 </body>
 </html>
